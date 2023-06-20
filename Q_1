@@ -1,0 +1,22 @@
+def verif_cupom(Nu_cupom):
+    N_pri_cumpom = 75
+    N_ult_cumpom = 208
+    
+    if  N_pri_cumpom <= Nu_cupom <=  N_ult_cumpom:
+        print("Cupom valido: ")
+        
+    else:
+        print("cupom invalido: ")
+    
+def main():
+
+    Nu_cupom = int(input("digite o número do cupom que voçê deseja: "))
+    
+    R = verif_cupom(Nu_cupom)
+    print(R) 
+    
+if __name__ == "__main__":
+    main()
+
+    
+    
