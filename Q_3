@@ -1,0 +1,14 @@
+def cal_descont(idade):
+    if idade < 21:
+      print("Desconto sera de 15% : ")
+    
+    else:
+       print("Desconto sera de 10% : ")
+
+def main():
+    
+    idadeP = int(input("digite a idade que você deseja: "))
+    resultado = cal_descont(idadeP)
+        
+if __name__ == "__main__":
+    main()
