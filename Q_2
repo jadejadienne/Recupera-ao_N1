@@ -1,0 +1,21 @@
+def main():
+    livros = []
+    
+    tam = int(input('Digite o tamanho da sua lista: '))
+    
+    for i in range(tam):
+        liv = input('Digite o nome do livro: ')
+        rank = int(input('Digite sua posição no ranking: '))
+        livros.append((rank, liv))
+    
+    livros_ordenados = sorted(livros)
+    
+    print('Ranking de Mais Vendidos')
+    
+    for rank, liv in livros_ordenados:
+        print(f'{rank} - {liv}')
+ 
+
+if __name__ == "__main__":
+    main()
+
