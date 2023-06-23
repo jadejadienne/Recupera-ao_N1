@@ -1,0 +1,13 @@
+def calcular_da_media():
+    somatorio_das_notas = 0
+ 
+    for i in range(1, 11):
+        notas_dos_alunos = float(input(f"Informe a nota do aluno que voçê deseja {i}: "))
+        soma_notas += notas_dos_alunos
+
+    MEDIA = somatorio_das_notas / 10
+
+    return MEDIA
+
+media_das_notas = calcular_da_media()
+print("A média das notas é: ", media_das_notas)
