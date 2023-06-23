@@ -1,0 +1,18 @@
+
+
+import random
+
+numsecret = random.randint(1,50)
+
+
+while True:
+    
+    inseri_palpite = int(input("Digite um número que voçê deseja más que estejá entre 1 e 50: "))
+
+    if inseri_palpite > numsecret:
+        print("Seu palpite foi muito alto! Tente novamente.")
+    elif inseri_palpite < numsecret:
+        print("Seu palpite foi muito baixo! Tente novamente.")
+    else:
+        print("Parabéns! Você acertou o número secreto!")
+        break
